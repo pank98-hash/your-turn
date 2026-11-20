@@ -1,0 +1,7 @@
+{
+  "point": "quat2rotmat",
+  "module": "src.utils",
+  "solution": ".solutions/src_utils_quat2rotmat.py",
+  "tests": ["test_identity", "test_normalized"],
+  "hints": ["归一化四元数", "注意符号"]
+}

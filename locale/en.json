@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Your Turn",
+    "description": "Hollows out the core implementation of a solved exercise and hands it back to you — the AI writes the contract and acceptance tests, then only reports pass or fail, never rewriting your code or the tests."
+  }
+}

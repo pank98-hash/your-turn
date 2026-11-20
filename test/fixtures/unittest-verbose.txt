@@ -1,0 +1,41 @@
+test_euler2rotmat_z90 (tests.test_utils.TestEuler) ... ok
+test_quat2rotmat_identity (tests.test_utils.TestQuat) ... ok
+test_quat2rotmat_z90 (tests.test_utils.TestQuat) ... FAIL
+test_quat2rotmat_orthogonal (tests.test_utils.TestQuat) ... ERROR
+test_quat2rotmat_roundtrip (tests.test_utils.TestQuat) ... ok
+
+======================================================================
+FAIL: test_quat2rotmat_z90 (tests.test_utils.TestQuat)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/mujoco-tutorials/tests/test_utils.py", line 24, in test_quat2rotmat_z90
+    np.testing.assert_allclose(quat2rotmat(q), expected, atol=1e-9)
+  File "/home/pank/miniconda3/envs/pt28/lib/python3.8/site-packages/numpy/testing/_private/utils.py", line 1527, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/pank/miniconda3/envs/pt28/lib/python3.8/site-packages/numpy/testing/_private/utils.py", line 840, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError:
+Not equal to tolerance rtol=1e-07, atol=1e-09
+Mismatched elements: 4 / 9 (44.4%)
+Max absolute difference: 1.0
+ x: array([[ 1.,  0.,  0.],
+       [ 0.,  0.,  0.],
+       [ 0.,  0.,  0.]])
+ y: array([[ 1.,  0.,  0.],
+       [ 0.,  0., -1.],
+       [ 0.,  1.,  0.]])
+
+======================================================================
+ERROR: test_quat2rotmat_orthogonal (tests.test_utils.TestQuat)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/mujoco-tutorials/tests/test_utils.py", line 30, in test_quat2rotmat_orthogonal
+    R = quat2rotmat(q)
+  File "/tmp/mujoco-tutorials/src/utils.py", line 4, in quat2rotmat
+    raise NotImplementedError("quat2rotmat —— 等你来实现")
+NotImplementedError: quat2rotmat —— 等你来实现
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=1, errors=1)

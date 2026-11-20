@@ -1,0 +1,45 @@
+{
+  "name": "@pank98-hash/your-turn",
+  "description": "Your Turn learning plugin: the AI hollows out the core implementation and lets you implement it yourself, judging only pass/fail — never rewriting your code.",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "lib",
+    "skills",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "skills",
+    "learning",
+    "education",
+    "your-turn",
+    "fill-the-blanks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pank98-hash/your-turn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pank98-hash/your-turn/issues"
+  },
+  "homepage": "https://github.com/pank98-hash/your-turn#readme",
+  "license": "MIT"
+}
