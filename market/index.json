@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Pank's DSH plugins",
+    "zh": "Pank 的 DSH 插件"
+  },
+  "description": {
+    "en": "Personal DeepSeek Harness plugins and skills by pank98-hash.",
+    "zh": "pank98-hash 的个人 DeepSeek Harness 插件与技能。"
+  },
+  "metadata": {
+    "categories": {
+      "learning": {
+        "title": {
+          "en": "Learning",
+          "zh": "学习"
+        }
+      }
+    },
+    "labels": {},
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "@pank98-hash/your-turn",
+      "title": {
+        "en": "Your Turn",
+        "zh": "该你了"
+      },
+      "description": {
+        "en": "Hollows out the core implementation of a solved exercise and hands it back to you — the AI writes the contract and acceptance tests, then only reports pass or fail, never rewriting your code or the tests.",
+        "zh": "把已解决习题的核心实现留白，交回给你亲手补上——AI 写好接口契约与验收测试后，只判绿红、不评写法，也绝不替你改实现或改测试。"
+      },
+      "author": "pank98-hash",
+      "homepage": "https://github.com/pank98-hash/your-turn#readme",
+      "repository": {
+        "url": "https://github.com/pank98-hash/your-turn"
+      },
+      "icon": "https://raw.githubusercontent.com/pank98-hash/your-turn/master/icon.svg",
+      "metadata": {
+        "category": "learning",
+        "keywords": [
+          "learning",
+          "education",
+          "your-turn",
+          "fill-the-blanks",
+          "skills",
+          "dsh"
+        ],
+        "labels": [],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795164563,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/pank98-hash/your-turn",
+            "commit": "682d5a39e799b067e65be07bd1961a2021c0f398"
+          }
+        }
+      ]
+    }
+  ]
+}
